@@ -6,8 +6,16 @@ body {
   background-color: #12343b;
 }
 
-#monthly-total {
-    text-align: right;
+/* Flexbox */
+body html {
+  height: 100%;
+  margin: 0;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 /* - for later
@@ -28,18 +36,24 @@ Night Blue Shadow: #12343b */
 /* Main form dataTables */
 .dataTables {
   background-color: #c89666;
-  margin: auto;
   padding-top: 20px;
   padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 8px;
+  max-width: 90%;
 }
 
 /* Submit Button */
-/* #submit-button{
-    display: flex;
-    justify-self: right;
-} */
+#submit-button{
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  padding: 0.5em;
+  width: 15%;
+  justify-self: right;
+  margin-top: 10px;
+}
 
 /* Table */
 table {
@@ -69,12 +83,12 @@ tbody tr:nth-child(odd) {
 
 tbody tr:nth-child(even) {
   background-color: #2d545e;
-  color: white; 
+  color: white;
 }
 
 /* custom table formatting for 5th and last row */
-table td:last-child{
-    text-align: center;
+table td:last-child {
+  text-align: center;
 }
 
 table td:nth-child(5) {
@@ -94,5 +108,8 @@ button {
   width: 85px;
   background-color: #e8dcd1;
   border-radius: 4px;
-  display: center;
+}
+
+#monthly-total {
+  text-align: right;
 }
