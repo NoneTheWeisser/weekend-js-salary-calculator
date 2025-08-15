@@ -27,6 +27,8 @@ Night Blue Shadow: #12343b */
 
 /* Page Header */
 #header {
+  font-family:monospace;
+  font-size: 40px;
   text-align: center;
   background-color: #12343b;
   color: #dfc7ad;
@@ -102,7 +104,7 @@ input {
   padding: 0.5em;
   width: 150px;
   background: #e1c6ac;
-  border: 1px solid;
+  border: 1px solid #2d545e;
   border-radius: 4px;
 }
 button {
@@ -121,6 +123,7 @@ button {
   text-align: right;
   background-color: rgb(120, 5, 5);
   color: white;
-  padding: 10px 0 10px 0;
-  margin: 5px 0 0 0;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid black;
 }

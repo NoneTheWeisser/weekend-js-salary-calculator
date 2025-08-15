@@ -41,19 +41,25 @@ function addEmployee(event) {
   document.getElementById("annual-salary").value = "";
 }
 
+// some sort of render function so we can combine tasks and fire
 function render() {
   const tableBody = document.getElementById("table-body");
   tableBody.innerHTML = "";
 
   for (let i = 0; i < employees.length; i++) {
     const employee = employees[i];
+    // format the annual salary to currency 
+    const formattedSalary = Number(employee.annualSalary).toLocaleString("en-US",{
+        style:"currency", currency:"USD", minimumFractionDigits: 0});
+
+
     tableBody.innerHTML += `
             <tr>
                 <td>${employee.firstName}</td>
                 <td>${employee.lastName}</td>
                 <td>${employee.employeeId}</td>
                 <td>${employee.title}</td>
-                <td>${employee.annualSalary}</td>
+                <td>${formattedSalary}</td>
                 <td><button onClick="deleteEmployee(${i})">Delete</button></td>
             </tr>
             `;
@@ -61,7 +67,6 @@ function render() {
   updateTotalSalary();
 }
 
-// some sort of render function so we can combine tasks and fire
 
 // employee table - delete button deleteEmployee()
 function deleteEmployee(index) {
@@ -83,6 +88,8 @@ function updateTotalSalary() {
   highMonthlySalary(total);
 }
 
+
+
 function highMonthlySalary(total) {
   const monthlyTotalElement = document.getElementById("monthly-total");
   // Looking for high salary
@@ -92,8 +99,3 @@ function highMonthlySalary(total) {
     monthlyTotalElement.classList.remove("high-monthly-total");
   }
 }
-
-// A 'Submit' button should collect the form information, store the information to calculate monthly costs,
-// append information to the DOM and clear the input fields. Using the stored information,
-// calculate monthly costs and append this to the to DOM. If the total monthly cost exceeds $20,000,
-//  add a red background color to the total monthly cost.
