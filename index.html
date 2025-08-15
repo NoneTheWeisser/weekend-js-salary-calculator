@@ -17,10 +17,10 @@
         <form onSubmit="addEmployee(event)">
           <input id="first-name" placeholder="First Name" type="text" />
           <input id="last-name" placeholder="Last Name" type="text" />
-          <input id="ID" placeholder="ID" type="text" />
+          <input id="employee-Id" placeholder="ID" type="text" />
           <input id="title" placeholder="Title" type="text" />
           <input id="annual-salary" placeholder="Annual Salary" type="text" />
-          <button id="submit-button">Submit</button>
+          <button type="submit" id="submit-button">Submit</button>
         </form>
       </section>
 
@@ -38,12 +38,21 @@
             </tr>
           </thead>
           <tbody id="table-body"></tbody>
+          <tr>
+            <!-- delete this after we format, I just want the visual for now. -->
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td><button onClick="deleteEmployee(event)">Delete</button></td>
+          </tr>
         </table>
       </section>
       <h2 id="monthly-total">Total Monthly:</h2>
     </main>
     <footer>
-        <!-- might not need a footer -->
+      <!-- might not need a footer -->
     </footer>
   </body>
 </html>
