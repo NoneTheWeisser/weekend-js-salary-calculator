@@ -55,7 +55,7 @@
                 <td>${employee.title}</td>
                 <td>${employee.annualSalary}</td>
                 <td><button onClick="deleteEmployee(${i})">Delete</button></td>
-            <tr>
+            </tr>
             `;
     }
     //   updateTotalSalary();

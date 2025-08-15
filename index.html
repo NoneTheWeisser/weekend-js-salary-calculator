@@ -12,6 +12,7 @@
       <h1 id="header">Salary Calculator</h1>
     </header>
     <main>
+        <section class="dataTables"> 
       <section id="employee-form">
         <h2>Add Employee</h2>
         <form onSubmit="addEmployee(event)">
@@ -38,18 +39,10 @@
             </tr>
           </thead>
           <tbody id="table-body"></tbody>
-          <tr>
-            <!-- delete this after we format, I just want the visual for now. -->
-            <td>placeholder</td>
-            <td>placeholder</td>
-            <td>placeholder</td>
-            <td>placeholder</td>
-            <td>placeholder</td>
-            <td><button onClick="deleteEmployee(event)">Delete</button></td>
-          </tr>
         </table>
       </section>
       <h2 id="monthly-total">Total Monthly:</h2>
+      </section>
     </main>
     <footer>
       <!-- might not need a footer -->

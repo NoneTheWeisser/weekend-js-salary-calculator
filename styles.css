@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: black;
+  background-color: #12343b;
+}
+
+#monthly-total {
+    text-align: right;
+}
+
+/* - for later
+Sand Tan: #e1b382
+Sand Tan Shadow: #c89666
+Night Blue: #2d545e
+Night Blue Shadow: #12343b */
+
+/* Page Header */
+#header {
+  text-align: center;
+  background-color: #12343b;
+  color: #dfc7ad;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Main form dataTables */
+.dataTables {
+  background-color: #c89666;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+/* Submit Button */
+/* #submit-button{
+    display: flex;
+    justify-self: right;
+} */
+
+/* Table */
+table {
+  width: 100%;
+  text-align: left;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  height: 2.15em;
+}
+th,
+td {
+  padding: 0.5em;
+  min-width: 3.5em;
+}
+thead tr {
+  background-color: #12343b;
+  color: #fcfcfc;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #dcdcdc;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #2d545e;
+  color: white; 
+}
+
+/* custom table formatting for 5th and last row */
+table td:last-child{
+    text-align: center;
+}
+
+table td:nth-child(5) {
+  text-align: right;
+}
+
+/* Form Elements */
+input {
+  padding: 0.5em;
+  width: 150px;
+  background: #e1c6ac;
+  border: 1px solid;
+  border-radius: 4px;
+}
+button {
+  padding: 0.5em;
+  width: 85px;
+  background-color: #e8dcd1;
+  border-radius: 4px;
+  display: center;
+}
