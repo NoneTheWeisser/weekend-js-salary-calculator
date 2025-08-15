@@ -14,6 +14,7 @@ body html {
 main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 100%;
 }
@@ -45,14 +46,15 @@ Night Blue Shadow: #12343b */
 }
 
 /* Submit Button */
-#submit-button{
+#submit-button {
   display: flex;
-  justify-content: center; 
-  align-items: center;     
+  justify-content: center;
+  align-items: center;
   padding: 0.5em;
   width: 15%;
   justify-self: right;
   margin-top: 10px;
+  font-size: 16px;
 }
 
 /* Table */
@@ -112,4 +114,13 @@ button {
 
 #monthly-total {
   text-align: right;
+}
+
+/* If salary is over 20K */
+.high-monthly-total {
+  text-align: right;
+  background-color: rgb(120, 5, 5);
+  color: white;
+  padding: 10px 0 10px 0;
+  margin: 5px 0 0 0;
 }
