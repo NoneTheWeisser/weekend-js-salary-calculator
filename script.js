@@ -83,8 +83,8 @@ function updateTotalSalary() {
   }
 
   const totalMonthlyElement = document.getElementById("monthly-total");
-  totalMonthlyElement.textContent = `Total Monthly: ${total.toLocaleString("en-US",{
-        style:"currency", currency:"USD", minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+  totalMonthlyElement.textContent = `Total Monthly: ${total.toLocaleString("en-US",
+    {style:"currency", currency:"USD", minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
 
   highMonthlySalary(total);
 }
