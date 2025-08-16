@@ -112,6 +112,12 @@ button {
   width: 85px;
   background-color: #e8dcd1;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }
 
 #monthly-total {

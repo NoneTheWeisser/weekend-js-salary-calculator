@@ -50,7 +50,7 @@ function render() {
     const employee = employees[i];
     // format the annual salary to currency 
     const formattedSalary = Number(employee.annualSalary).toLocaleString("en-US",{
-        style:"currency", currency:"USD", minimumFractionDigits: 0});
+        style:"currency", currency:"USD", minimumFractionDigits: 2, maximumFractionDigits: 2});
 
 
     tableBody.innerHTML += `
@@ -83,7 +83,8 @@ function updateTotalSalary() {
   }
 
   const totalMonthlyElement = document.getElementById("monthly-total");
-  totalMonthlyElement.textContent = `Total Monthly: $${total.toLocaleString()}`;
+  totalMonthlyElement.textContent = `Total Monthly: ${total.toLocaleString("en-US",{
+        style:"currency", currency:"USD", minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
 
   highMonthlySalary(total);
 }
