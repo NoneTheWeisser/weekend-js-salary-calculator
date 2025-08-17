@@ -1,3 +1,9 @@
+/* - color scheme 
+Sand Tan: #e1b382
+Sand Tan Shadow: #c89666
+Night Blue: #2d545e
+Night Blue Shadow: #12343b */
+
 /* Global Styles */
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -19,11 +25,6 @@ main {
   height: 100%;
 }
 
-/* - for later
-Sand Tan: #e1b382
-Sand Tan Shadow: #c89666
-Night Blue: #2d545e
-Night Blue Shadow: #12343b */
 
 /* Page Header */
 #header {
