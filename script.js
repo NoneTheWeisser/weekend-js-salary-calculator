@@ -1,4 +1,4 @@
-// ready to DOM
+// ready the DOM
 document.addEventListener("DOMContentLoaded", readyNow);
 
 let employees = [];
@@ -36,7 +36,7 @@ function addEmployee(event) {
   //   clear form fields
   document.getElementById("first-name").value = "";
   document.getElementById("last-name").value = "";
-  document.getElementById("employee-Id").value = "";
+  document.getElementById("employee-Id").value = "";r
   document.getElementById("title").value = "";
   document.getElementById("annual-salary").value = "";
 }
